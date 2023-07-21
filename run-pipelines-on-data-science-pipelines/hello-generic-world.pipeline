@@ -14,21 +14,27 @@
           "op": "execute-notebook-node",
           "app_data": {
             "component_parameters": {
-              "filename": "load_data.ipynb",
-              "runtime_image": "docker.io/amancevice/pandas:1.1.1",
+              "dependencies": [],
+              "include_subdirectories": false,
               "outputs": [
                 "data/noaa-weather-data-jfk-airport/jfk_weather.csv"
               ],
               "env_vars": [
                 "DATASET_URL=https://dax-cdn.cdn.appdomain.cloud/dax-noaa-weather-data-jfk-airport/1.1.4/noaa-weather-data-jfk-airport.tar.gz"
               ],
-              "dependencies": [],
-              "include_subdirectories": false
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "load_data.ipynb",
+              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
             },
             "label": "Load weather data",
             "ui_data": {
               "label": "Load weather data",
-              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
               "x_pos": 106,
               "y_pos": 180.50000762939453,
               "description": "Run notebook file"
@@ -69,19 +75,25 @@
           "op": "execute-notebook-node",
           "app_data": {
             "component_parameters": {
-              "filename": "Part 1 - Data Cleaning.ipynb",
-              "runtime_image": "docker.io/amancevice/pandas:1.1.1",
+              "dependencies": [],
+              "include_subdirectories": false,
               "outputs": [
                 "data/noaa-weather-data-jfk-airport/jfk_weather_cleaned.csv"
               ],
               "env_vars": [],
-              "dependencies": [],
-              "include_subdirectories": false
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "Part 1 - Data Cleaning.ipynb",
+              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
             },
             "label": "",
             "ui_data": {
               "label": "Part 1 - Data Cleaning.ipynb",
-              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
               "x_pos": 383,
               "y_pos": 180,
               "description": "Run notebook file"
@@ -129,17 +141,23 @@
           "op": "execute-notebook-node",
           "app_data": {
             "component_parameters": {
-              "filename": "Part 2 - Data Analysis.ipynb",
-              "runtime_image": "docker.io/amancevice/pandas:1.1.1",
+              "dependencies": [],
+              "include_subdirectories": false,
               "outputs": [],
               "env_vars": [],
-              "dependencies": [],
-              "include_subdirectories": false
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "Part 2 - Data Analysis.ipynb",
+              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
             },
             "label": "",
             "ui_data": {
               "label": "Part 2 - Data Analysis.ipynb",
-              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
               "x_pos": 657,
               "y_pos": 119.00000762939453,
               "description": "Run notebook file"
@@ -187,17 +205,23 @@
           "op": "execute-notebook-node",
           "app_data": {
             "component_parameters": {
-              "filename": "Part 3 - Time Series Forecasting.ipynb",
-              "runtime_image": "docker.io/amancevice/pandas:1.1.1",
+              "dependencies": [],
+              "include_subdirectories": false,
               "outputs": [],
               "env_vars": [],
-              "dependencies": [],
-              "include_subdirectories": false
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "Part 3 - Time Series Forecasting.ipynb",
+              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
             },
             "label": "",
             "ui_data": {
               "label": "Part 3 - Time Series Forecasting.ipynb",
-              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
               "x_pos": 656,
               "y_pos": 230,
               "description": "Run notebook file"
@@ -253,6 +277,7 @@
               "content": "Download the data",
               "associated_id_refs": [
                 {
+                  "id": "31a7c74e-4b71-4ced-a157-bf96bb332308",
                   "node_ref": "bb889c69-b23a-484e-8fb3-e69309f38a98"
                 }
               ]
@@ -267,6 +292,7 @@
               "content": "Clean the data",
               "associated_id_refs": [
                 {
+                  "id": "a627c6ee-dcab-4ec3-8aaf-5adc7063d54c",
                   "node_ref": "8c96e288-4461-4d7e-8e0d-353c1fdb0c8c"
                 }
               ]
@@ -281,6 +307,7 @@
               "content": "Analyze the data",
               "associated_id_refs": [
                 {
+                  "id": "44962fb9-544d-4a0f-b55f-10ea731ab4a9",
                   "node_ref": "dcf486ef-2d73-4306-a3ca-af720a1f8eb3"
                 }
               ]
@@ -295,6 +322,7 @@
               "content": "Explore approaches to predicting future temperatures",
               "associated_id_refs": [
                 {
+                  "id": "1264acf8-d130-4fe2-8b68-490ab7d04b34",
                   "node_ref": "1e4b1763-337e-4f84-ae9c-a6cc79a1b7eb"
                 }
               ]
@@ -306,7 +334,16 @@
         "properties": {
           "name": "hello-generic-world",
           "runtime": "Data Science Pipelines",
-          "description": "A generic pipeline tutorial"
+          "description": "A generic pipeline tutorial",
+          "pipeline_defaults": {
+            "kubernetes_shared_mem_size": {},
+            "kubernetes_pod_labels": [],
+            "kubernetes_tolerations": [],
+            "kubernetes_pod_annotations": [],
+            "mounted_volumes": [],
+            "env_vars": [],
+            "kubernetes_secrets": []
+          }
         }
       },
       "runtime_ref": ""
