@@ -20,7 +20,10 @@
                 "data/noaa-weather-data-jfk-airport/jfk_weather.csv"
               ],
               "env_vars": [
-                "DATASET_URL=https://dax-cdn.cdn.appdomain.cloud/dax-noaa-weather-data-jfk-airport/1.1.4/noaa-weather-data-jfk-airport.tar.gz"
+                {
+                  "env_var": "DATASET_URL",
+                  "value": "https://dax-cdn.cdn.appdomain.cloud/dax-noaa-weather-data-jfk-airport/1.1.4/noaa-weather-data-jfk-airport.tar.gz"
+                }
               ],
               "kubernetes_pod_annotations": [],
               "kubernetes_pod_labels": [],
