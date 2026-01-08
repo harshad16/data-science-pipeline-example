@@ -17,12 +17,12 @@
               "dependencies": [],
               "include_subdirectories": false,
               "outputs": [
-                "data/noaa-weather-data-jfk-airport/jfk_weather.csv"
+                "data/jfk-weather.csv"
               ],
               "env_vars": [
                 {
                   "env_var": "DATASET_URL",
-                  "value": "https://dax-cdn.cdn.appdomain.cloud/dax-noaa-weather-data-jfk-airport/1.1.4/noaa-weather-data-jfk-airport.tar.gz"
+                  "value": "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/fJKLoMKtgpDAl5MkA6rf2A/jfk-weather.csv"
                 }
               ],
               "kubernetes_pod_annotations": [],
@@ -32,12 +32,12 @@
               "kubernetes_tolerations": [],
               "mounted_volumes": [],
               "filename": "load_data.ipynb",
-              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
+              "runtime_image": "registry.redhat.io/rhoai/odh-pipeline-runtime-datascience-cpu-py312-rhel9@sha256:15521010258caf707152061d6b3204c43ee59ec023ad0b48a3e8af86894ebff0"
             },
             "label": "Load weather data",
             "ui_data": {
               "label": "Load weather data",
-              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
+              "image": "/notebook/hnalla/failure/static/elyra/notebook.svg",
               "x_pos": 106,
               "y_pos": 180.50000762939453,
               "description": "Run notebook file"
@@ -81,7 +81,7 @@
               "dependencies": [],
               "include_subdirectories": false,
               "outputs": [
-                "data/noaa-weather-data-jfk-airport/jfk_weather_cleaned.csv"
+                "data/jfk_weather_cleaned.csv"
               ],
               "env_vars": [],
               "kubernetes_pod_annotations": [],
@@ -91,12 +91,11 @@
               "kubernetes_tolerations": [],
               "mounted_volumes": [],
               "filename": "Part 1 - Data Cleaning.ipynb",
-              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
+              "runtime_image": "registry.redhat.io/rhoai/odh-pipeline-runtime-datascience-cpu-py312-rhel9@sha256:15521010258caf707152061d6b3204c43ee59ec023ad0b48a3e8af86894ebff0"
             },
-            "label": "",
             "ui_data": {
               "label": "Part 1 - Data Cleaning.ipynb",
-              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
+              "image": "/notebook/hnalla/failure/static/elyra/notebook.svg",
               "x_pos": 383,
               "y_pos": 180,
               "description": "Run notebook file"
@@ -155,12 +154,11 @@
               "kubernetes_tolerations": [],
               "mounted_volumes": [],
               "filename": "Part 2 - Data Analysis.ipynb",
-              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
+              "runtime_image": "registry.redhat.io/rhoai/odh-pipeline-runtime-datascience-cpu-py312-rhel9@sha256:15521010258caf707152061d6b3204c43ee59ec023ad0b48a3e8af86894ebff0"
             },
-            "label": "",
             "ui_data": {
               "label": "Part 2 - Data Analysis.ipynb",
-              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
+              "image": "/notebook/hnalla/failure/static/elyra/notebook.svg",
               "x_pos": 657,
               "y_pos": 119.00000762939453,
               "description": "Run notebook file"
@@ -219,12 +217,11 @@
               "kubernetes_tolerations": [],
               "mounted_volumes": [],
               "filename": "Part 3 - Time Series Forecasting.ipynb",
-              "runtime_image": "registry.redhat.io/ubi9/python-39@sha256:02427ad2ce51fad244ad46cb877c5e2aa9e09e79728c02ad137f6bf36c81948f"
+              "runtime_image": "registry.redhat.io/rhoai/odh-pipeline-runtime-datascience-cpu-py312-rhel9@sha256:15521010258caf707152061d6b3204c43ee59ec023ad0b48a3e8af86894ebff0"
             },
-            "label": "",
             "ui_data": {
               "label": "Part 3 - Time Series Forecasting.ipynb",
-              "image": "/notebook/monday/elyra/static/elyra/notebook.svg",
+              "image": "/notebook/hnalla/failure/static/elyra/notebook.svg",
               "x_pos": 656,
               "y_pos": 230,
               "description": "Run notebook file"
@@ -336,14 +333,14 @@
         "runtime_type": "KUBEFLOW_PIPELINES",
         "properties": {
           "name": "hello-generic-world",
-          "runtime": "Data Science Pipelines",
+          "runtime": "Pipelines",
           "description": "A generic pipeline tutorial",
           "pipeline_defaults": {
-            "kubernetes_shared_mem_size": {},
-            "kubernetes_pod_labels": [],
-            "kubernetes_tolerations": [],
-            "kubernetes_pod_annotations": [],
             "mounted_volumes": [],
+            "kubernetes_pod_annotations": [],
+            "kubernetes_pod_labels": [],
+            "kubernetes_shared_mem_size": {},
+            "kubernetes_tolerations": [],
             "env_vars": [],
             "kubernetes_secrets": []
           }
